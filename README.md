@@ -1,13 +1,7 @@
-❯ npm install
+[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/tsengcc2025-lgtm/5.embeddings-similarity)
 
-added 2 packages in 9s
 
-1 package is looking for funding
-  run `npm fund` for details
-
-~/projects/stackblitz-starters-y9ynxdu1 8s
 ❯ npm start
-
 > homework5-embeddings-similarity@1.0.0 start
 > node scripts/similarity-test.js
 
