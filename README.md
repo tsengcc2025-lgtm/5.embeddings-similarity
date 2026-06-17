@@ -1,36 +1,54 @@
-# Homework 5 — Embeddings Similarity Experiment
+❯ npm install
 
-Run: `npm install` → set `.env` → `npm start`
+added 2 packages in 9s
 
-## Analysis (fill in after you run `npm start`)
+1 package is looking for funding
+  run `npm fund` for details
 
-Replace the placeholders below with your actual output numbers.
+~/projects/stackblitz-starters-y9ynxdu1 8s
+❯ npm start
 
-**Group 1 (similar meaning — coffee):** pairwise similarities should be **relatively high**.
+> homework5-embeddings-similarity@1.0.0 start
+> node scripts/similarity-test.js
 
-**Group 2 (different topics):** pairwise similarities should be **lower** than Group 1.
+Embeddings 相似度實驗（text-embedding-3-small + 餘弦相似度）
 
-**Group 2 vs Group 1 (1–2 sentences in English or 繁體中文):**
 
-> After running the script, paste your averages here. Example template:
-> Group 1 average ≈ ___ ; Group 2 average ≈ ___. Group 1 is higher as expected because all sentences are about coffee.
+=== 第1組（意思相近） ===
 
-## Pairwise scores (paste from terminal)
+[1] 我喜歡喝咖啡
+[2] 咖啡的香氣很迷人
+[3] 我每天早上都要喝一杯咖啡
 
-### Group 1
+  (1) ↔ (2) 相似度：0.6792  「我喜歡喝咖啡…」↔「咖啡的香氣很迷人…」
+  (1) ↔ (3) 相似度：0.7346  「我喜歡喝咖啡…」↔「我每天早上都要喝一杯咖啡…」
+  (2) ↔ (3) 相似度：0.5473  「咖啡的香氣很迷人…」↔「我每天早上都要喝一杯咖啡…」
 
-- (1)↔(2):
-- (1)↔(3):
-- (2)↔(3):
+=== 第2組（意思不同） ===
 
-### Group 2
+[1] 高鐵快要進站了
+[2] 這部電影很好看
+[3] 手機快沒電了
 
-- (1)↔(2):
-- (1)↔(3):
-- (2)↔(3):
+  (1) ↔ (2) 相似度：0.1828  「高鐵快要進站了…」↔「這部電影很好看…」
+  (1) ↔ (3) 相似度：0.3820  「高鐵快要進站了…」↔「手機快沒電了…」
+  (2) ↔ (3) 相似度：0.2286  「這部電影很好看…」↔「手機快沒電了…」
 
-### Group 3 (custom)
+=== 第3組（自訂：手搖飲） ===
 
-- (1)↔(2):
-- (1)↔(3):
-- (2)↔(3):
+[1] 我想喝無糖少冰的珍珠奶茶
+[2] 手搖飲我偏好茶感重、不要全糖
+[3] 今天天氣很熱想來杯冰的四季春青茶
+
+  (1) ↔ (2) 相似度：0.5347  「我想喝無糖少冰的珍珠奶茶…」↔「手搖飲我偏好茶感重、不要…」
+  (1) ↔ (3) 相似度：0.6007  「我想喝無糖少冰的珍珠奶茶…」↔「今天天氣很熱想來杯冰的四…」
+  (2) ↔ (3) 相似度：0.4918  「手搖飲我偏好茶感重、不要…」↔「今天天氣很熱想來杯冰的四…」
+
+--- 摘要 ---
+第1組（意思相近） 平均兩兩相似度：0.6537
+第2組（意思不同） 平均兩兩相似度：0.2645
+第3組（自訂：手搖飲） 平均兩兩相似度：0.5424
+
+預期：第1組（咖啡）兩兩相似度通常高於第2組（不相關主題）。
+第3組（手搖飲）因都圍繞飲料偏好，相似度應介於第1組與第2組之間或接近第1組。
+請將以上數值貼入 README.md 作業繳交。
