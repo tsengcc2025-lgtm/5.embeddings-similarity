@@ -1,0 +1,5 @@
+作業5：npm install → .env 填 OPENAI_API_KEY → npm start
+
+只需 OpenAI（不需 Qdrant）。StackBlitz 若 Embeddings 401/連線失敗，改 Codespaces 執行 npm start，再把終端機數值貼入 README.md。
+
+作業4：npm start 需有效 OpenAI Key；YouBike 為台北開放資料，行政區請用信義區、大安區等。

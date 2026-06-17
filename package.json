@@ -1,0 +1,16 @@
+{
+  "name": "homework5-embeddings-similarity",
+  "version": "1.0.0",
+  "description": "作業5：Embeddings 向量相似度實驗",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/similarity-test.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "openai": "^6.38.0"
+  }
+}
